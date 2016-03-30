@@ -1,0 +1,20 @@
+mixin imgoricon(inspan)
+	if inspan==0
+		img(src="assets/images/flag1.png", alt="")
+	else if inspan==1 
+		span.fa.fa-usd
+	else
+		span.fa.fa-user
+mixin list1(inspan, texto)
+	li
+		ul.list-unstyled.list-inline
+			li
+				+imgoricon(inspan)
+			li.pd-0
+				a(href="#")
+					h6= texto	   	
+			li.pd-0
+				a(href="#")
+					span.fa.fa-angle-down
+mixin addimg(img)
+		img(src="assets/images/"+ img, alt="")

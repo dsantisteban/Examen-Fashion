@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900,300,100,500);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900);
+.pd-0 {
+  padding: 0px !important; }
+
+.mg-0 {
+  margin: 0px !important; }
+
+header {
+  font-family: "Open Sans", sans-serif; }
+  header .headerpart1 {
+    border-bottom: 1px solid #E2E2E2;
+    background-color: #EEEEEE; }
+    header .headerpart1 a, header .headerpart1 span {
+      color: #888888; }
+    header .headerpart1 .row {
+      padding: 10px 0px; }
+  header .headerpart2 .row {
+    padding: 50px 0px; }
+  header .headerpart2 ul li span {
+    font-size: 50px; }
+  header .headerpart2 ul li :nth-child(2) {
+    line-height: 2px; }
+  header .headerpart2 .search input {
+    width: 250px;
+    margin: 40px 0px;
+    position: relative; }
+  header .headerpart2 .search span {
+    position: absolute;
+    top: 45px;
+    right: 30px; }
+  header .headerpart3 {
+    background-color: #EEEEEE; }
+    header .headerpart3 h4 {
+      margin: 0; }
+    header .headerpart3 ul > li {
+      padding: 21px; }
+    header .headerpart3 a {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      color: black;
+      font-size: 15px; }
+    header .headerpart3 li.active {
+      background-color: #E48080; }
+      header .headerpart3 li.active a {
+        color: white; }
+    header .headerpart3 .col-md-2 {
+      padding: 10px 15px;
+      background-color: rgba(51, 51, 51, 0.9);
+      color: white; }
+      header .headerpart3 .col-md-2 span {
+        padding-right: 15px; }
+      header .headerpart3 .col-md-2 h6 {
+        margin-bottom: 0px; }
+
+section.slider {
+  background: url(../images/slider1.jpg) no-repeat;
+  background-size: 100%;
+  padding: 148px 0px;
+  color: #E8E8E9; }
+  section.slider .box1 {
+    border: 3px solid #E8E8E9;
+    width: 589px;
+    margin: 0 auto; }
+  section.slider h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    letter-spacing: 5px;
+    font-size: 21px; }
+
+section.publicidad .row {
+  padding: 40px 0px; }
+section.publicidad .col-md-5, section.publicidad .col-md-7 {
+  height: 300px; }
+section.publicidad .col-md-5 {
+  background: url(../images/banner1.jpg) no-repeat; }
+section.publicidad .col-md-7 {
+  background: url(../images/banner2.jpg) no-repeat; }
+
+section.clientes {
+  background: url(../images/client-bg.jpg) no-repeat;
+  height: 300px; }
+  section.clientes .col-md-2 img {
+    width: 100%;
+    padding: 100px 0px; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,41 @@
+section.slider {
+	background: url(../images/slider1.jpg) no-repeat;
+	background-size:100%;
+	padding:148px 0px;
+	color:$colortext1;
+	.box1{
+		border:3px solid $colorbd1;
+		width: 589px;
+		margin:0 auto;
+	}
+	h3{
+		@include family-weight($lato,300);
+		letter-spacing: 5px;
+		font-size: 21px;
+	}
+
+}
+section.publicidad{
+	.row{
+		padding:40px 0px;
+	}
+	.col-md-5, .col-md-7{
+		height: 300px;
+	}
+	.col-md-5{
+		background: url(../images/banner1.jpg) no-repeat;
+	}
+	.col-md-7{
+		background: url(../images/banner2.jpg) no-repeat;
+	}	
+}
+section.clientes{
+	background: url(../images/client-bg.jpg) no-repeat;
+	height: 300px;
+	.col-md-2{
+		img{
+			width: 100%;
+			padding:100px 0px;
+		}
+	}
+}
