@@ -4,3 +4,42 @@
 .mg-0{
 	margin:0px !important;
 }
+.thumb{
+	position:relative;
+	border:1px solid $colorbd1;
+	padding:5px;
+	img{
+		width: 100%;
+	}
+}
+
+li.price-red, li.tachado{
+	font-family: $lato;
+} 
+li.price-red{
+	color:$bg1;
+}
+li.tachado{
+	text-decoration:line-through;
+		color:$borderpart1;
+}
+.boxnew, .boxsale{
+	position:absolute;
+	top:0px;
+	width:50px;		
+	height: 25px;
+	color:white;
+	h6{
+		margin-top: 8px;
+		text-align: center;
+	}
+}
+.boxnew{
+	top:10px;
+	background: $bg2;	
+}
+.boxsale{
+	top:40px;
+	background: $bg1;
+
+}

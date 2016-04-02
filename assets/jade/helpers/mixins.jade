@@ -17,4 +17,144 @@ mixin list1(inspan, texto)
 				a(href="#")
 					span.fa.fa-angle-down
 mixin addimg(img)
-		img(src="assets/images/"+ img, alt="")
+		img.img-responsive(src="assets/images/"+ img, alt="")
+mixin carousel(img,tachado,box1,down)
+	.col-xs-3
+		.thumb
+			block append product
+				if box1==1
+					.boxnew
+						h6 SALE
+				if box1==2
+					.boxsale
+						h6 NEW
+				else if box1==3
+					.boxnew
+						h6 SALE
+					.boxsale
+						h6 NEW	
+				+addimg(img)
+			block append description
+				h5 Deliver Wide
+				if down==0
+					i.fa.fa-star
+					i.fa.fa-star
+					i.fa.fa-star
+					i.fa.fa-star-o
+					i.fa.fa-star-o
+					ul.list-unstyled.list-inline
+						if tachado==0
+							li.price-red $ 218.00
+						else 
+							li.tachado $ 242.00
+							li.price-red $ 218.00
+				else
+					ul.list-unstyled.list-inline
+						if tachado==0
+							li.price-red $ 218.00
+						else 
+							li.tachado $ 242.00
+							li.price-red $ 218.00
+					i.fa.fa-star
+					i.fa.fa-star
+					i.fa.fa-star
+					i.fa.fa-star-o
+					i.fa.fa-star-o
+
+mixin clothing(img,tachado,box1,down)
+	.col-md-4.col-xs-6
+		.media
+			.col-md-6.col-xs-6.text.center
+				.thumb
+					append product
+			.col-md-6.col-xs-6
+				append description
+mixin blog(img)
+	.col-md-3
+		+addimg(img)
+		h5 THE SAMPLE HEADING TITLE
+		p 27/11/2015
+		p Lorem ipsum dolor sit amet, consectetur adipisic ing elit, sed do...
+		a(href="#")
+			h6 Read More...
+mixin buy(icon,texto1,texto2)
+	.col-md-4
+		.rectangle
+			.col-md-2
+				i(class="fa fa-"+icon)
+
+			.col-md-10
+				h4= texto1
+				H6= texto2
+
+mixin accesories(icon1,icon2,icon3,icon4,icon5)
+	ul.list-unstyled.list-inline
+		li
+			i.fa(class="fa-"+icon1)
+		li
+			i.fa(class="fa-"+icon2)
+		li
+			i.fa(class="fa-"+icon3)
+		li
+			i.fa(class="fa-"+icon4)
+		li
+			i.fa(class="fa-"+icon5)
+				
+mixin listfooter(texto1,stexto1,stexto2,stexto3,stexto4)
+	.col-md-2
+		h5= texto1
+		ul.list-unstyled
+			li
+				h6
+					i.fa(class="fa-caret-right")
+					span= stexto1
+			li
+				h6
+					i.fa(class="fa-caret-right")
+					span= stexto2
+			li
+				h6
+					i.fa(class="fa-caret-right")
+					span= stexto3
+			li
+				h6
+					i.fa(class="fa-caret-right")
+					span= stexto4
+mixin title(li,icon1,texto1,texto2,texto3,icon2)
+	.row
+		if li==3
+			.col-md-5.col-xs-5
+				hr
+			.col-md-2.col-xs-2
+				ul.list-unstyled.list-inline.text-center
+					li
+						a(href="")
+							i.fa(class="fa fa-"+icon1,data-target="#myCarousel" data-slide-to="0")
+					li
+						h5= texto1
+					li
+						a(href="")
+							i.fa(class="fa fa-"+icon2,data-target="#myCarousel" data-slide-to="0")
+			.col-md-5.col-xs-5
+				hr
+		else if li==5
+			.col-md-4.col-xs-4
+				hr
+			.col-md-4.col-xs-4
+				ul.list-unstyled.list-inline
+					li
+						a(href="")
+							i.fa(class="fa fa-"+icon1,data-target="#myCarousel" data-slide-to="0")
+					li
+						h5= texto1
+					li
+						h5= texto2
+					li
+						h5= texto3
+					li
+						a(href="")
+							i.fa(class="fa fa-"+icon2,data-target="#myCarousel" data-slide-to="1")
+
+			.col-md-4.col-xs-4
+				hr
+

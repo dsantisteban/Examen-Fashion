@@ -2,3 +2,12 @@
 	font-family:$family;
 	font-weight:$wight;
 }
+@mixin bg($name){
+	background:url($name) no-repeat;
+	background-size:100%;
+}
+@mixin radius($radius) {
+-webkit-border-radius: $radius;
+-moz-border-radius: $radius;
+border-radius: $radius;
+}

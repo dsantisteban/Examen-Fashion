@@ -22,20 +22,14 @@ section.publicidad{
 	.col-md-5, .col-md-7{
 		height: 300px;
 	}
-	.col-md-5{
-		background: url(../images/banner1.jpg) no-repeat;
-	}
-	.col-md-7{
-		background: url(../images/banner2.jpg) no-repeat;
-	}	
+
 }
 section.clientes{
-	background: url(../images/client-bg.jpg) no-repeat;
-	height: 300px;
-	.col-md-2{
+	@include bg("../images/client-bg.jpg");
+	.col-xs-2{
+		padding:5% 1%;
 		img{
 			width: 100%;
-			padding:100px 0px;
 		}
 	}
 }

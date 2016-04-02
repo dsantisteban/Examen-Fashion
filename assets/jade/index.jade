@@ -1,13 +1,7 @@
 include helpers/mixins
 <!DOCTYPE html>
 html(lang="en")
-	head
-		meta(charset="UTF-8")
-		title Fashion Accesories
-		link(rel="stylesheet", href="assets/css/font-awesome.min.css")
-		link(rel="stylesheet", href="assets/css/bootstrap.min.css")
-		link(rel="stylesheet", href="assets/css/main.css")
-			
+	include views/head		
 	body
 		include views/header
 		include views/slider
@@ -16,4 +10,6 @@ html(lang="en")
 		include views/clientes
 		include views/clothing
 		include views/blog
+		include views/buy
 		include views/footer
+		include views/js/js.jade

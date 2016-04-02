@@ -1,0 +1,42 @@
+//views Contactus
+section.info{
+	@include bg("../images/contact.jpg");
+	color:white;
+	padding:100px 0px;
+	height:318px;
+}
+section.form{
+	iframe{
+		width: 100%;
+	}
+	padding:60px 0px;
+	input,textarea{
+	width: 100%;
+	padding-left:5px;
+	border:0;
+	background-color:$colortext1;
+	font-size:12px;
+	}
+	input:nth-child(1){
+		margin-top: 0px;
+	}
+	textarea{
+		height: 220px;
+	}
+	input{
+		height: 45px;
+		margin-bottom:30px;
+
+	}
+	.btn-send{
+		display: block;
+		width: 80px;
+		padding: 10px 20px;
+		background-color:$textpart1;
+		color:white;
+		margin:30px 15px;
+
+	}
+}
+
+	

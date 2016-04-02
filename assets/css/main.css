@@ -7,6 +7,41 @@
 .mg-0 {
   margin: 0px !important; }
 
+.thumb {
+  position: relative;
+  border: 1px solid #E8E8E9;
+  padding: 5px; }
+  .thumb img {
+    width: 100%; }
+
+li.price-red, li.tachado {
+  font-family: "Lato", sans-serif; }
+
+li.price-red {
+  color: #E48080; }
+
+li.tachado {
+  text-decoration: line-through;
+  color: #E2E2E2; }
+
+.boxnew, .boxsale {
+  position: absolute;
+  top: 0px;
+  width: 50px;
+  height: 25px;
+  color: white; }
+  .boxnew h6, .boxsale h6 {
+    margin-top: 8px;
+    text-align: center; }
+
+.boxnew {
+  top: 10px;
+  background: #444444; }
+
+.boxsale {
+  top: 40px;
+  background: #E48080; }
+
 header {
   font-family: "Open Sans", sans-serif; }
   header .headerpart1 {
@@ -47,7 +82,7 @@ header {
         color: white; }
     header .headerpart3 .col-md-2 {
       padding: 10px 15px;
-      background-color: rgba(51, 51, 51, 0.9);
+      background-color: #444444;
       color: white; }
       header .headerpart3 .col-md-2 span {
         padding-right: 15px; }
@@ -73,16 +108,51 @@ section.publicidad .row {
   padding: 40px 0px; }
 section.publicidad .col-md-5, section.publicidad .col-md-7 {
   height: 300px; }
-section.publicidad .col-md-5 {
-  background: url(../images/banner1.jpg) no-repeat; }
-section.publicidad .col-md-7 {
-  background: url(../images/banner2.jpg) no-repeat; }
 
 section.clientes {
-  background: url(../images/client-bg.jpg) no-repeat;
-  height: 300px; }
-  section.clientes .col-md-2 img {
+  background: url("../images/client-bg.jpg") no-repeat;
+  background-size: 100%; }
+  section.clientes .col-xs-2 {
+    padding: 5% 1%; }
+    section.clientes .col-xs-2 img {
+      width: 100%; }
+
+footer.one {
+  background-color: #E2E2E2; }
+
+footer.two {
+  background-color: #444444; }
+
+section.info {
+  background: url("../images/contact.jpg") no-repeat;
+  background-size: 100%;
+  color: white;
+  padding: 100px 0px;
+  height: 318px; }
+
+section.form {
+  padding: 60px 0px; }
+  section.form iframe {
+    width: 100%; }
+  section.form input, section.form textarea {
     width: 100%;
-    padding: 100px 0px; }
+    padding-left: 5px;
+    border: 0;
+    background-color: #E8E8E9;
+    font-size: 12px; }
+  section.form input:nth-child(1) {
+    margin-top: 0px; }
+  section.form textarea {
+    height: 220px; }
+  section.form input {
+    height: 45px;
+    margin-bottom: 30px; }
+  section.form .btn-send {
+    display: block;
+    width: 80px;
+    padding: 10px 20px;
+    background-color: #888888;
+    color: white;
+    margin: 30px 15px; }
 
 /*# sourceMappingURL=main.css.map */
